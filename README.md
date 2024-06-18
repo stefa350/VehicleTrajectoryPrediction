@@ -1,5 +1,5 @@
 # PBSC (Physical Behavior Scene Contex): LSTM-based model for Vehicle Trajectory Prediction
-This repo contains python notebook used to preprocess the UWaterloo Intersection Dataset and to create and train the model.
+This repo contains python notebook used to preprocess the Waterloo multi-agent traffic intersection dataset and to create and train the model or load our trained model.
 
 ## Abstract
 Nowadays autonomous vehicles together with trajectory prediction represent a burgeoning field in AI. Vehicle Trajectory Prediction is essential for efficient and safe navigation, especially when considering traffic condition in urban centers. 
@@ -19,18 +19,11 @@ The model processes the context scene through a Resnet-18 CNN and the stati and 
 
 ## Results
 
-<table style="width: 100%;">
-  <tr>
-    <th style="color: blue;">Blue</th>
-    <th style="color: red;">Red</th>
-    <th style="color: green;">Green</th>
-  </tr>
-  <tr>
-    <td>Observed Trajectory</td>
-    <td>Predicted Trajectory</td>
-    <td>Target Trajectory</td>
-  </tr>
-</table>
+| ![Blue](https://img.shields.io/badge/Blue-blue) | ![Red](https://img.shields.io/badge/Red-red) | ![Green](https://img.shields.io/badge/Green-green) |
+|---|---|---|
+| Observed Trajectory | Predicted Trajectory | Target Trajectory |
+
+
 
 <div align='center'>
   <table style="border-collapse: collapse; border: none;">
@@ -43,3 +36,24 @@ The model processes the context scene through a Resnet-18 CNN and the stati and 
 
 Considering that minmax normalization has been applied on the data, the ADE loss on the training set is 0.0510 while in test set is 0.1605.
 
+## How to run the code
+
+### Data preparation
+The files needed to run this section of the notebook are: 
+* Videos available in [University of Waterloo website](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/datasets/waterloo-multi-agent-traffic-dataset-intersection)
+* [csv files](./CSV_files) with the information of each agent in each video created by us.
+
+In the filtering subsection, you can choose the length of the predicted trajectory (in terms of tuples coordinates). In our work it was set to 5, since it allows to use the maximum number of entries with the same input and target length.
+You can change the number of videos for testing (we used only one video).
+
+This part can be skipped and use the final data provided in [dataset](./dataset).
+### Training
+The files needed to run this section of the notebook are: 
+* [frames](./frames)
+* [testing frames](./testing_videos/testing_frames)
+* [csv files](./dataset/) containing the filtered trajectories for train and test.
+
+Execute the "Normalization" section of the notebook, create the dataloaders, inizialize the model and training classes and start the training.
+
+### Testing
+You can load the [model](./Models/VTPModel.pth) and evaluate it on the test dataloader.
