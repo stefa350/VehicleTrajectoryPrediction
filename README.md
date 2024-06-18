@@ -58,3 +58,13 @@ Execute the "Normalization" section of the notebook, create the dataloaders, ini
 
 ### Testing
 You can load the [model](https://drive.google.com/drive/folders/1bXfQoo-zBRdioUYNiTgAJst3Rz4f-bQx?usp=share_link) and evaluate it on the test dataloader.
+
+## Authors
+[Fabrizio Italia](https://github.com/fabrizio-18), [Stefano D'Urso](https://github.com/stefa350), [Vincenzo Crisà](https://github.com/crisa11)
+
+## References
+Deep Learning-Based Multimodal Trajectory Prediction with Traffic Light, *Seoyoung Lee ,Hyogyeong Park , Yeonhwi You , Sungjung Yong and Il-Young Moon* [\[1\]](https://www.mdpi.com/2076-3417/13/22/12339)
+
+Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks, *Agrim Gupta, Justin Johnson, Fei-Fei Li, Silvio Savarese, Alexandre Alahi* [\[2\]](https://github.com/agrimgupta92/sgan/tree/master)
+
+Theory to Practice: LSTM and Transformers | PyTorch, *VSINGHSAN* [\[3\]](https://www.kaggle.com/code/tronrover/theory-to-practice-lstm-and-transformers-pytorch)
