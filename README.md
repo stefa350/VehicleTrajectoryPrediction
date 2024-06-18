@@ -8,4 +8,10 @@ In this study we propose a trajectory prediction model that reflects both physic
 The train and evaluation of the model are based on a part of the Waterloo intersection dataset, which provides multi-agent informations and Bird’s Eye View scenes for urban intersection situations.
 
 ## Model
+The model processes the context scene through a Resnet-18 CNN and the stati and observed trajectories information are processed by an LSTM encoder each. The concatenation of each output is processed by an LSTM decoder which predicts the trajectories.
+
+<div align='center'>
+  <img src='images/Immagine PNG.jpeg' width='1000px'>
+</div>
+
 
