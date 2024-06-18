@@ -54,7 +54,7 @@ The files needed to run this section of the notebook are:
 * [csv files](./dataset/) containing the filtered trajectories for train and test
 * [Resnet-18 model](https://drive.google.com/drive/folders/1bXfQoo-zBRdioUYNiTgAJst3Rz4f-bQx?usp=share_link)
 
-Execute the "Normalization" section of the notebook, create the dataloaders, inizialize the model and training classes and start the training.
+Execute the "Normalization" section of the notebook, create the dataloaders and inizialize the model and training classes to start the training.
 
 ### Testing
 You can load the [model](https://drive.google.com/drive/folders/1bXfQoo-zBRdioUYNiTgAJst3Rz4f-bQx?usp=share_link) and evaluate it on the test dataloader.
