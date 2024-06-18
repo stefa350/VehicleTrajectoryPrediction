@@ -18,9 +18,28 @@ The model processes the context scene through a Resnet-18 CNN and the stati and 
 </div>
 
 ## Results
-<div align='center' style="display: flex; justify-content: center;">
-  <img src="images/GIF/GIF9/trajectory9.gif" style="margin: 0 10px; max-width: 100%; height: auto;"></img>
-  <img src="images/GIF/GIF126/trajectory126.gif" style="margin: 0 10px; max-width: 100%; height: auto;"></img>
+
+<table style="width: 100%;">
+  <tr>
+    <th style="color: blue;">Blue</th>
+    <th style="color: red;">Red</th>
+    <th style="color: green;">Green</th>
+  </tr>
+  <tr>
+    <td>Observed Trajectory</td>
+    <td>Predicted Trajectory</td>
+    <td>Target Trajectory</td>
+  </tr>
+</table>
+
+<div align='center'>
+  <table style="border-collapse: collapse; border: none;">
+    <tr style="border: none;">
+      <td style="border: none;"><img src="images/GIF/GIF9/trajectory9.gif" style="max-width: 100; height: auto;"></td>
+      <td style="border: none;"><img src="images/GIF/GIF126/trajectory126.gif" style="max-width: 100; height: auto;"></td>
+    </tr>
+  </table>
 </div>
+
 Considering that minmax normalization has been applied on the data, the ADE loss on the training set is 0.0510 while in test set is 0.1605.
 
