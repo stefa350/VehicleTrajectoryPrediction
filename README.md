@@ -5,13 +5,21 @@ This repo contains python notebook used to preprocess the UWaterloo Intersection
 Nowadays autonomous vehicles together with trajectory prediction represent a burgeoning field in AI. Vehicle Trajectory Prediction is essential for efficient and safe navigation, especially when considering traffic condition in urban centers. 
 In the last years, simple models have been developed to predict vehicles trajectories using just physical laws, but more recent researches have attempted to include also interactions between the agents and the environment involving informations related to the agent’s state.
 In this study we propose a trajectory prediction model that reflects both physical behavior and scene context information. The model considers agents' past state information, as well as their trajectory positions. Combining the results of a deep-learning solution with the results of a multilayer LSTM, the model takes care of a huge amount of information to predict the better trajectory.
-The train and evaluation of the model are based on a part of the Waterloo intersection dataset, which provides multi-agent informations and Bird’s Eye View scenes for urban intersection situations.
-
+The train and evaluation of the model are based on a part of the Waterloo multi-agent traffic intersection dataset, which provides multi-agent informations and Bird’s Eye View scenes for urban intersection situations.
+## Dataset
+The videos from the Waterloo multi-agent traffic intersection dataset were divided into frames with a sampling rate of 3Hz (a tenth of the video frame rate). After a preprocessing phase of the dataset, this is the obtained structure of the data, considering 12 points as observed trajectory and 5 to be predicted.
+|TRACK_ID|First_Last_Timestamps|Frame|X-110,Y-110|...| X,Y|...| X+50,Y+50| STATUS-110|...|STATUS|STATUS+50|
+|--------|:-------------------:|:---:|:---------:|---|:--:|---|:--------:|:---------:|---|:----:|:-------:|
+|93|(83.083, 88.755333)|769_frame2610.jpg|(538857.67, 4813989.59)|...| (538844.67, 4814009.67)|...| (538835.71, 4814022.95)|(9.7034, 1.914, 0.3481, 2.207)|...|(32.2293, 1.0497, -0.0924, 2.1672)|(36.1521, 0.7201, -0.3222, 2.174)|
 ## Model
 The model processes the context scene through a Resnet-18 CNN and the stati and observed trajectories information are processed by an LSTM encoder each. The concatenation of each output is processed by an LSTM decoder which predicts the trajectories.
-
 <div align='center'>
-  <img src='images/Immagine PNG.jpeg' width='1000px'>
+  <img src='images/model.jpeg' width='1000px'>
 </div>
 
+## Results
+<div align='center'>
+  <img src="images/GIF/GIF9/trajectory9.gif" width='500px'></img>
+  <img src="images/GIF/GIF126/trajectory126.gif" width='500px'></img>
+</div>
 
