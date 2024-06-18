@@ -49,11 +49,12 @@ You can change the number of videos for testing (we used only one video).
 This part can be skipped and use the final data provided in [dataset](./dataset).
 ### Training
 The files needed to run this section of the notebook are: 
-* [frames](./frames)
-* [testing frames](./testing_videos/testing_frames)
-* [csv files](./dataset/) containing the filtered trajectories for train and test.
+* [frames](https://drive.google.com/drive/folders/1MS6roGw7t24WAnHc7s5H4joBZmns2XLT?usp=share_link)
+* [testing frames](https://drive.google.com/drive/folders/15rJ2vdA_FixUR9XmhLteoH40KRzPFgLx?usp=share_link)
+* [csv files](./dataset/) containing the filtered trajectories for train and test
+* [Resnet-18 model](https://drive.google.com/drive/folders/1bXfQoo-zBRdioUYNiTgAJst3Rz4f-bQx?usp=share_link)
 
 Execute the "Normalization" section of the notebook, create the dataloaders, inizialize the model and training classes and start the training.
 
 ### Testing
-You can load the [model](./Models/VTPModel.pth) and evaluate it on the test dataloader.
+You can load the [model](https://drive.google.com/drive/folders/1bXfQoo-zBRdioUYNiTgAJst3Rz4f-bQx?usp=share_link) and evaluate it on the test dataloader.
