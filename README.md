@@ -19,7 +19,7 @@ The model processes the context scene through a Resnet-18 CNN and the stati and 
 
 ## Results
 <div align='center'>
-  <img src="images/GIF/GIF9/trajectory9.gif" width='500px'></img>
-  <img src="images/GIF/GIF126/trajectory126.gif" width='500px'></img>
+  <img src="images/GIF/GIF9/trajectory9.gif" width='500px'>
+  <img src="images/GIF/GIF126/trajectory126.gif" width='500px'>
 </div>
 
