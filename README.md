@@ -1,5 +1,5 @@
 # PBSC (Physical Behavior Scene Contex): LSTM-based model for Vehicle Trajectory Prediction
-This repo contains python notebook used to preprocess the Waterloo multi-agent traffic intersection dataset and to create and train the model or load our trained model.
+This repo contains python notebook used to preprocess the Waterloo multi-agent traffic intersection dataset and to create and train the model or load our trained model. You can find the presentation [here](./Presentation%20of%20the%20project.pdf).
 
 ## Abstract
 Nowadays autonomous vehicles together with trajectory prediction represent a burgeoning field in AI. Vehicle Trajectory Prediction is essential for efficient and safe navigation, especially when considering traffic condition in urban centers. 
